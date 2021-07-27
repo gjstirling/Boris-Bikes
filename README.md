@@ -23,4 +23,10 @@ Bike <-> Working? <--> True/False?
 
 Docking station --> release a bike 
 
+(3/4) 
 
+1. Name Error 
+2. /Users/graemestirling/.rvm/rubies/ruby-2.7.3/bin/irb
+3. (irb) : 1
+4. Name Error raised when a given name is invalid or undefined(uninitialized)  
+5. Defining a Docking Station class 
