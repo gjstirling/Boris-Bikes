@@ -11,12 +11,5 @@ describe DockingStation do
   subject { @docking_station }
   it { respond_to('release_bike') }
 
-
-
-
-
-
-
-
 end
 
