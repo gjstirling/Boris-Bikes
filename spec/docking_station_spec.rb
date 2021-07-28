@@ -15,11 +15,12 @@ describe DockingStation do
   subject { @docking_station }
   it { respond_to('release_bike') }
   # test 2 
+
+  # it "responds to working? in bike class" do
+  #   expect(something).to eq(true)
+  # end
  
-
-
-  # subject { @bike = Bike.new }
-  # it { respond_to('woring?')}
+  # it { respond_to('working?')}
   # same non-failing issue as before ? 
 
 end

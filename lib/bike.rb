@@ -1,6 +1,6 @@
 class Bike
   def working?
-   # bike should work yes or no ?  
+   true  
   end
 end
 
