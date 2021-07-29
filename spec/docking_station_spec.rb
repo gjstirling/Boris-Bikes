@@ -21,6 +21,7 @@ describe DockingStation do
     expect(@docking_station).to respond_to(:dock)
   end
 
+    
   it 'test function dock, is working & biked are docked' do
     # @docking_station.bikes = []
     # expect(@docking_station.dock('velo')).to eq('velo')

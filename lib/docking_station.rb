@@ -16,7 +16,11 @@ class DockingStation
     @bikes 
     # @bikes << velo
   end
+
 end
 
-station = DockingStation.new
-puts station.dock('velo') 
+
+
+
+# station = DockingStation.new
+# puts station.dock('velo') 
