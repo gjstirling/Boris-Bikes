@@ -3,7 +3,6 @@ require 'docking_station'
 describe DockingStation do
   before(:each) do
     @docking_station = DockingStation.new
-    @bike = Bike.new
   end
   # @docking_station = DockingStation.new
 
@@ -22,15 +21,11 @@ describe DockingStation do
   end
 
   it 'test function of dock is working & biked are docked' do
-    expect(@bike.dock(velo)).to eq('velo')
+    expect(subject.dock(velo)).to eq 'velo'
   end
   
-  # given
+end
+
   # when 'stores hired bikes'
   # then add bike to docking station
   # test if station is filled
-
-
-
-end
-
