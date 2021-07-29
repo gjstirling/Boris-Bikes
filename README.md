@@ -1,4 +1,4 @@
-Within this project we are building an infrastruture to emulate all docking stations, bikes and repair work. 
+Within this project we are building an infrastruture to emulate all docking stations, bikes and repair work by Greame and Corinne.
 
 There are 22 challenges to complete.
 
