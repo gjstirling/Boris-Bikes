@@ -3,10 +3,8 @@ require './bike.rb'
 class DockingStation
   def release_bike
     # returns an instance of the bike class 
-    # Bike.new
-    bike = Bike.new
+    Bike.new
 
-    # puts "bike is #{@bike.working?}"
   end
 end
 
