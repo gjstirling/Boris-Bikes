@@ -1,10 +1,10 @@
-require 'bike.rb'
-
 class DockingStation
   def release_bike
     # returns an instance of the bike class 
     Bike.new
-
+  end
+  
+  def dock
   end
 end
 
