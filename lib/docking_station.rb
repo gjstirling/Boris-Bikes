@@ -1,15 +1,22 @@
 class DockingStation
 
+  attr_reader :bikes
+
+  def initialize
+    # @bikes = []
+    @bikes = bikes
+  end
+
   def release_bike
     # returns an instance of the bike class 
     Bike.new
   end
-  
+
   def dock(velo)
-    velo
+    @bikes 
+    # @bikes << velo
   end
 end
 
-# Class is now defined so no longer recieveing error
-
-# release_bike method undefined so now no method error appearing
+station = DockingStation.new
+puts station.dock('velo') 
