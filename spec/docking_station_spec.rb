@@ -1,5 +1,4 @@
 require 'docking_station'
-require 'bike'
 
 describe DockingStation do
    before(:each) do
@@ -11,17 +10,13 @@ describe DockingStation do
   # end
   # one line version of above
   
-  # test 1
+  # test 1 release bike
   subject { @docking_station }
   it { respond_to('release_bike') }
   # test 2 
-
-  # it "responds to working? in bike class" do
-  #   expect(something).to eq(true)
-  # end
- 
-  # it { respond_to('working?')}
-  # same non-failing issue as before ? 
+  it "To get a bike and check that it is working?" do 
+    expect(@docking_station).to (Bike.new)
+  end
 
 end
 
