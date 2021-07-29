@@ -3,8 +3,8 @@ require 'docking_station'
 describe DockingStation do
   before(:each) do
     @docking_station = DockingStation.new
+    @bike = Bike.new
   end
-  
   # @docking_station = DockingStation.new
 
   it "respond to release bike method" do
@@ -20,11 +20,17 @@ describe DockingStation do
   it 'dockes bikes' do
     expect(@docking_station).to respond_to(:dock)
   end
+
+  it 'test function of dock is working & biked are docked' do
+    expect(@bike.dock(velo)).to eq('velo')
+  end
   
   # given
   # when 'stores hired bikes'
   # then add bike to docking station
-  # test if statsin is filled
+  # test if station is filled
+
+
 
 end
 
