@@ -1,10 +1,9 @@
 class DockingStation
 
-  attr_reader :bikes
+   attr_reader :bike
 
   def initialize
-    # @bikes = []
-    @bikes = bikes
+    @bike = bike
   end
 
   def release_bike
@@ -13,8 +12,7 @@ class DockingStation
   end
 
   def dock(velo)
-    @bikes 
-    # @bikes << velo
+    @bike= velo
   end
 
 end
