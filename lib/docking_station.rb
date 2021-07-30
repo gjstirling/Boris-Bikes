@@ -8,7 +8,7 @@ class DockingStation
 
   def release_bike
     # returns an instance of the bike class 
-    Bike.new
+    @bike
   end
 
   def dock(bike)
