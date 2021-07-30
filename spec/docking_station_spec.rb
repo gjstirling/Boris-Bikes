@@ -4,7 +4,7 @@ describe DockingStation do
   before(:each) do
     @docking_station = DockingStation.new
   end
-  # @docking_station = DockingStation.new
+  
 
   it "respond to release bike method" do
     expect(@docking_station).to respond_to(:release_bike)
