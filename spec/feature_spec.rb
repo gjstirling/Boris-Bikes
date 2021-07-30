@@ -1,5 +1,7 @@
+require './lib/bike.rb'
 require './lib/docking_station.rb'
 docking_station = DockingStation.new
-docking_station.release_bike
+p docking_station
+p docking_station.release_bike
 
 

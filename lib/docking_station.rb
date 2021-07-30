@@ -3,12 +3,19 @@ class DockingStation
 
    attr_reader :bike
 
-  #def initialize  
-  #end
+  def initialize  
+     @bike = []
+  end
 
   def release_bike
     # returns an instance of the bike class 
-    @bike
+    if @bike == [] 
+      raise "No bikes available"
+      # we need to raise error here when condition is met
+    else
+      @bike
+    end
+    # we now need to check if @bike is empty if so print string "No bikes availble"
   end
 
   def dock(bike)
