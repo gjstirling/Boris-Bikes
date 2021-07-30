@@ -3,7 +3,6 @@ require 'docking_station'
 describe DockingStation do
   before(:each) do
     @docking_station = DockingStation.new
-    @bike = Bike.new
   end
   # @docking_station = DockingStation.new
 
@@ -23,13 +22,11 @@ describe DockingStation do
 
 #   # this test I don't understand   
   it 'allows the user to dock a bike and the bike gets stored in the docking station' do
-      @docking_station.dock(@bike)
-      expect(@docking_station.bike).to eq @bike
+    # create instance of bike
+    bike = Bike.new
+    # store this instance in dock 
+    @docking_station.dock(bike)
+    # now run test to check our instance variable @bike = bike 
+    expect(@docking_station.bike).to eq bike
   end
 end
-
-  # when 'stores hired bikes'
-  # then add bike to docking station
-  # test if station is filled
-
-

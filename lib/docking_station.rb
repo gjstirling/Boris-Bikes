@@ -1,3 +1,4 @@
+
 class DockingStation
 
    attr_reader :bike
@@ -11,14 +12,9 @@ class DockingStation
     Bike.new
   end
 
-  def dock(velo)
-    @bike= velo
+  def dock(bike)
+    @bike = bike
   end
 
 end
 
-
-
-
-# station = DockingStation.new
-# puts station.dock('velo') 
