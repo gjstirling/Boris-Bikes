@@ -27,13 +27,21 @@ describe DockingStation do
     # now run test to check our instance variable @bike = bike 
     expect(@docking_station.bike).to eq bike
   end
-
+describe '#release_bike' do
   it 'raises error when no bikes are availaible' do
     expect {@docking_station.release_bike}.to raise_error "No bikes availiable"
   end 
-  
-
+end
   # docking station
   # not charging bikes unnecessarily
   # not release bikes if no bikes -> raise error
+
+describe '#dock' do 
+  it 'raises error when dock already contains bike' do
+  
+    @docking_station.dock(Bike.new)
+    expect {@docking_station.dock Bike.new}.to raise_error "Docking station full"
+  end
+end
+
 end
