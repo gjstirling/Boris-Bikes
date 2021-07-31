@@ -21,12 +21,13 @@ describe DockingStation do
 #   # This test I now understand  
   it 'allows the user to dock a bike and the bike gets stored in the docking station' do
     # create instance of bike
-    bike = Bike.new
+    
     # store this instance in dock 
-    @docking_station.dock(bike)
+    #@docking_station.dock()
     # now run test to check our instance variable @bike = bike 
-    expect(@docking_station.bike).to eq bike
+    expect(@docking_station.bike).to eq []
   end
+
 describe '#release_bike' do
   it 'raises error when no bikes are availaible' do
     expect {@docking_station.release_bike}.to raise_error "No bikes availiable"
@@ -37,10 +38,10 @@ end
   # not release bikes if no bikes -> raise error
 
 describe '#dock' do 
-  it 'raises error when dock already contains bike' do
+  it 'raises error when docking station is at full capacity' do
   
     @docking_station.dock(Bike.new)
-    expect {@docking_station.dock Bike.new}.to raise_error "Docking station full"
+    expect {20.times{@docking_station.dock Bike.new}}.to raise_error "Docking station full"
   end
 end
 

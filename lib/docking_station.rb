@@ -4,18 +4,18 @@ class DockingStation
    attr_reader :bike
 
   def initialize  
-     #@bike = []
+     @bike = []
   end
 
   def release_bike
     # returns an instance of the bike class 
-    fail "No bikes availiable" unless @bike
+    fail "No bikes availiable" if @bike.empty?
     @bike
   end
 
   def dock(bike)
-    fail 'Docking station full' if @bike 
-    @bike = bike 
+    fail 'Docking station full' if (@bike.length == 20) 
+    @bike << bike 
   end
 
 end
