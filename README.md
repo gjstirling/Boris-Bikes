@@ -1,11 +1,6 @@
-Within this project we are building an infrastruture to emulate all docking stations, bikes and repair work by Greame and Corinne.
+Boris Bikes is a project used to intorduce TDD practices and learning to use mock/doubles to keep tests isolated. It has two classes docking_station and bike which both have individual responsibilities. 
 
-There are 22 challenges to complete.
-
-(1) Create repo etc ... DONE 
-
-(2) 
-First user story:
+## Domain Model Working 
 
 Nouns: Person, bike
 
@@ -23,10 +18,4 @@ Bike <-> Working? <--> True/False?
 
 Docking station --> release a bike 
 
-(3/4) 
 
-1. Name Error 
-2. /Users/graemestirling/.rvm/rubies/ruby-2.7.3/bin/irb
-3. (irb) : 1
-4. Name Error raised when a given name is invalid or undefined(uninitialized)  
-5. Defining a Docking Station class 
